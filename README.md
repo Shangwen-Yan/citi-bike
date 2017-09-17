@@ -26,13 +26,16 @@ wget http://witestlab.poly.edu/bikes/201601-citibike-tripdata.zip
 unzip 201601-citibike-tripdata.zip 
 ```
 * 读取第五列（出发地点），输出到all-station.csv文件
-
-` awk -F "\"*,\"*" '{print $5}' 201601-citibike-tripdata.csv 201601-citibike-tripdata.csv > all-station.csv `
+```
+awk -F "\"*,\"*" '{print $5}' 201601-citibike-tripdata.csv 201601-citibike-tripdata.csv > all-station.csv 
+```
 * 读取第九列（到达地点），追加到all-station.csv文件
-
-` awk -F "\"*,\"*" '{print $9}' 201601-citibike-tripdata.csv 201601-citibike-tripdata.csv >> all-station.csv `
+```
+awk -F "\"*,\"*" '{print $9}' 201601-citibike-tripdata.csv 201601-citibike-tripdata.csv >> all-station.csv 
+```
 * 使用管道符号（将前一指令输出作为下一指令的输入）
 * uniq 指令只能对相邻行做唯一统计，所以必须要先进行排序，-c表示在列前添加统计的出现次数
 * sort -nr 表示逆序排序（从高到低），最终输出到final-result.csv
-
-` cat all-station.csv | sort | uniq -c | sort -nr > final-result.csv `
+``` 
+cat all-station.csv | sort | uniq -c | sort -nr > final-result.csv 
+```
