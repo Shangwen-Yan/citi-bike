@@ -1,4 +1,3 @@
-some changes
 # 最受欢迎的骑行地点项目
 ## Bash Script
 ## 项目说明
