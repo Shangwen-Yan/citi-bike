@@ -20,7 +20,9 @@ _斜_
 
 ## 脚本说明
 * 声明脚本解释方法
-``` #! /bin/bash ```
+``` 
+#! /bin/bash 
+```
 * 下载并解压数据
 
 ` wget http://witestlab.poly.edu/bikes/201601-citibike-tripdata.zip `
