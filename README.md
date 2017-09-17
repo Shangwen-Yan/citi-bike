@@ -1,5 +1,5 @@
 # 最受欢迎的骑行地点项目
-## Bash Script
+## Using Bash Script
 ## 项目说明
 从Citi Bike下载的骑行数据，每组数据包含：
 * Trip Duration (seconds)
