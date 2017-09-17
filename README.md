@@ -1,6 +1,3 @@
-**粗体**
-
-_斜_
 # 最受欢迎的骑行地点项目
 ## 使用Bash Script
 ## 项目说明
@@ -26,9 +23,8 @@ _斜_
 * 下载并解压数据
 ```
 wget http://witestlab.poly.edu/bikes/201601-citibike-tripdata.zip 
+unzip 201601-citibike-tripdata.zip 
 ```
-
-` unzip 201601-citibike-tripdata.zip `
 * 读取第五列（出发地点），输出到all-station.csv文件
 
 ` awk -F "\"*,\"*" '{print $5}' 201601-citibike-tripdata.csv 201601-citibike-tripdata.csv > all-station.csv `
